@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { firestore } from 'firebase/firestore';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  stringifiedDocument = null;
+  constructor() {}
+
+  createDocument() {
+    this.stringifiedDocument = 'To be continued';
+  }
 }
